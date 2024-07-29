@@ -1,0 +1,352 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url(bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: (1200px 100vw);
+    height: 70vh;
+    position: relative;
+
+}
+
+.main .box {
+    height: 70vh;
+    width: 100%;
+    opacity: 0.55;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+
+nav {
+    display: flex;
+    max-width: 65vw;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+}
+
+nav img {
+    width: 140px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    font-family: 'Martel Sans', sans-serif;
+    height: calc(100% - 60px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 15px;
+    padding: 0px 30px;
+
+
+}
+
+@media screen and (max-width:400px) {
+    .hero {
+        margin-top: 30px;
+        margin-bottom: 90px;
+
+    }
+
+
+
+
+
+}
+
+.hero>:nth-child(1) {
+    font-weight: 800;
+    font-size: 40px;
+    text-align: center;
+}
+
+.hero>:nth-child(2) {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+.hero>:nth-child(3) {
+    font-weight: 300;
+    font-size: 15px;
+    text-align: center;
+}
+
+.sepration {
+    height: 6px;
+    background-color: rgb(93, 90, 90);
+    position: relative;
+    z-index: 20;
+}
+
+.btn {
+    padding: 3px 8px;
+    border: 1px solid white;
+    /* color: white; */
+    border-radius: 2px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+.btn-red-sm {
+    background-color: red;
+    color: rgb(248, 239, 239);
+
+}
+
+.btn-red {
+    color: white;
+    background-color: red;
+    padding: 1px 1px;
+    font-size: 16px;
+    border-radius: 6px;
+    font-weight: bold;
+    
+
+}
+
+.main input {
+
+    padding: 4px 98px 5px 24px;
+    font-size: 15px;
+    border-radius: 6px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(249, 237, 237, 0.5);
+    color: white;
+    
+}
+
+
+
+
+
+.hero-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    gap: 10px;
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    max-width: 70vw;
+    margin: auto;
+}
+
+@media screen and (max-width:1360px) {
+
+    .first {
+        flex-wrap: wrap;
+        padding: 101px;
+    }
+}
+
+.secimg {
+    display: flex;
+    position: relative;
+}
+
+.secimg img {
+    width: 555px;
+    position: relative;
+    z-index: 10;
+
+}
+
+.secimg video {
+    position: absolute;
+    top: 63px;
+    right: 0;
+}
+
+section.first>div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 34px 0px;
+}
+
+section.first>div :nth-child(1) {
+    font-size: 48px;
+    font-weight: bold;
+
+}
+
+section.first>div :nth-child(2) {
+    font-size: 24px;
+    font-weight: bold;
+
+}
+
+.fourth {
+    max-width: 75vw;
+}
+
+.flag h2 {
+    text-align: center;
+    font-size: 48px;
+    padding-bottom: 20px;
+}
+
+.flag {
+    padding: 40px;
+    color: white;
+    background-color: rgb(6, 2, 2);
+
+
+}
+
+.febox {
+    transition: all .5s ease-out;
+    background-color: rgb(127, 120, 120);
+    max-width: 60vw;
+    display: flex;
+    padding: 15px;
+    margin: 34px auto;
+    font-size: 24px;
+    justify-content: space-between;
+    cursor: pointer;
+
+
+}
+
+.febox:hover {
+    background-color: rgb(94, 89, 89);
+}
+
+.febox img {
+    color: white;
+    font-weight: bold;
+
+}
+
+.febox svg {
+    filter: invert(1);
+}
+
+footer {
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 34px;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+
+@media screen and (max-width:1360px) {
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+
+    }
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+
+}
+
+.footer a {
+    font-size: 14px;
+    color: white;
+}
+
+.question {
+    margin: 32px 0px;
+    font-size: 24px;
+}
+
+@media screen and (max-width:1360px) {
+
+    nav {
+        max-width: 90vw;
+    }
+
+    .first {
+        flex-wrap: wrap;
+    }
+
+    .secimg img {
+        width: 305px;
+    }
+
+    .secimg video {
+        width: 305px;
+    }
+
+    .hero>:nth-child(1) {
+
+        font-size: 32px;
+
+    }
+
+    .hero>:nth-child(2) {
+
+        font-size: 18px;
+
+    }
+
+    .hero>:nth-child(3) {
+
+        font-size: 18px;
+
+    }
+    .hero-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    gap: 10px;
+}
+.flag h2 {
+    text-align: center;
+    font-size: 32px;
+    padding-bottom: 20px;
+}
+.footer{
+    max-width: 90vw;
+}
+.footer-item{
+    align-items: center;
+}
+
+}
